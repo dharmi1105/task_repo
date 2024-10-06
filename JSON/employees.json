@@ -1,0 +1,36 @@
+[{
+    "name" : "John",
+    "Age" : 23,
+    "email" : "john123@gmail.com",
+    "department" : "HR",
+    "isactive" : true
+},
+{
+    "name" : "Ameer",
+    "Age" : 32,        
+    "email" : "ameer234@gmail.com",
+    "department" : "staff",
+    "isactive" : 0
+},
+{
+    "name" : "Sam",
+    "Age" : 26,
+    "email" : "sam123@gmail.com",
+    "department" : "IT",
+    "isactive" : 1
+
+},
+{
+    "name" : "Ramu",
+    "Age" : 29,
+    "email" : "ramul123@gmail.com",
+    "department" : "IT",
+    "isactive" : 0
+},
+{
+    "name" : "Taper",
+    "Age" : 2,
+    "email" : "taper123@gmail.com",
+    "department" : "small business",
+    "isactive" : 0
+}]
