@@ -1,24 +1,28 @@
 import json
-import pandas as pd
 from pydantic import BaseModel, ValidationError, EmailStr
+from datetime import datetime
 class Employee(BaseModel):
     name : str
     Age : int
     email : EmailStr
-    department : str
     isactive : bool
+
+with open('/Users/dpatibandla/Documents/training_files/JSON/employees.json','r') as file:
+    json_data = json.load(file)
+
 
 if __name__ == "__main__":
 
-    # import data from file in data object
-
-    df = pd.read_json('employees.json')
-    print (df.to_string())
-
-    #for record in data:
-        #try:
-            #employee = Employee(**data)
-            #print(f"Valid employee record: {employee.name}")
-        #except ValidationError as e:
-          # print(f"Invalid employee record: {record['name']}")
-           # print(f"Errors: {e.errors()}")
+ if isinstance(json_data, list):
+    for employee_data in json_data:
+        try:
+            employee = Employee(**employee_data)
+            print("Validation Successful",employee)
+        except ValidationError as e:
+            print("Validation Failed",e)
+ else:
+    try:
+        employee = Employee(**json_data)
+        print("Validation Successful",employee)
+    except ValidationError as e:
+            print("Validation Failed",e)
