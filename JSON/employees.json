@@ -1,31 +1,31 @@
 [{
-    "name" : "John",
-    "Age" : 23,
+    "firstname" : "John",
+    "Age of the user" : 23,
     "email" : "john123@gmail.com",
-    "isactive" : true
+    "active_status" : true
 },
 {
-    "name" : "Ameer",
-    "Age" : 32,        
+    "firstname" : "Ameer",
+    "Age of the user" : 32,        
     "email" : "ameer234@gmail.com",
-    "isactive" : false
+    "active_status" : false
 },
 {
-    "name" : "Sam",
-    "Age" : 26,
+    "firstname" : "Sam",
+    "Age of the user" : 26,
     "email" : "sam123@gmail.com",
-    "isactive" : true
+    "active_status" : true
 
 },
 {
-    "name" : "Ramu",
-    "Age" : 29,
+    "firstname" : "Ramu",
+    "Age of the user" : 29,
     "email" : "ramul123@gmail.com",
-    "isactive" : true
+    "active_status" : true
 },
 {
-    "name" : "Taper",
-    "Age" : 2,
+    "firstname" : "Taper",
+    "Age of the user" : 2,
     "email" : "taper123@gmail.com",
-    "isactive" : true
+    "active_status" : true
 }]
