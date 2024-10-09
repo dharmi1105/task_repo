@@ -30,7 +30,7 @@ class Vehicle:
 
         :return: A string representing the type of vehicle
         """
-        return(f"This is a :{cls.vehicle_type}")
+        return(f"This is a:{cls.vehicle_type}")
     
 class Car(Vehicle):
     #class variables for the child class
@@ -58,10 +58,10 @@ class Car(Vehicle):
 
         """
 
-        return(f"Vehicle name:{self.name}, Mileage:{self.mileage}, Max_speed:{self.max_speed},Transmission Type:{self.transmission_type}")
+        return(f"Vehicle name:{self.name},Mileage:{self.mileage},Max_speed:{self.max_speed},Transmission Type:{self.transmission_type}")
     
     #Method overloading - like behavior using default arguments
-    def seating_capacity(self, capacity =4):
+    def seating_capacity(self, capacity=4):
         """
         Method to display seating capacity. default is 4 passengers
 
@@ -69,7 +69,7 @@ class Car(Vehicle):
         :return: A string representing the seating capacity
         """
 
-        return(f"Seating capacity of: {self.name} is {capacity} passengers")
+        return(f"Seating Capacity of:{self.name} is {capacity} passengers")
     
     @classmethod
     def num_of_tires(cls):
@@ -88,13 +88,13 @@ class Car(Vehicle):
 
         :return: A string representing the type of vehicle(car).
         """
-        return(f"This is a :{cls.vehicle_type}")
+        return(f"This is a:{cls.vehicle_type}")
     
 
 if __name__ == "__main__":
 
     #Instance of a vehicle
-    vehicle = Vehicle('General Vehicle',40,150)
+    vehicle = Vehicle('Generic Vehicle',40,150)
     print(vehicle.vehicle_info())
     print(vehicle.general_info())
 
